@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quản lý học sinh - TKB</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico" />
+    <link rel="stylesheet" href="../css/tkb.css" />
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="mobile-nav hide">
+        <ul>
+          <li>
+            <a href="../index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="aboutmenu.html">SƠ ĐỒ LỚP</a>
+          </li>
+          <li>
+            <a href="tkb.html">TKB LỚP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <div class="tkbcontainer">
+        <span
+          class="tkbname"
+          data-sal-duration="300"
+          data-sal="slide-down"
+          data-sal-delay="300"
+          data-sal-easing="ease-in"
+          data-sal-repeat="1"
+          >THỜI KHÓA BIỂU</span
+        >
+        <table
+          data-sal-duration="800"
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease-out"
+          data-sal-repeat="1"
+          style="table-layout: fixed; width: 70%"
+        >
+          <colgroup>
+            <col class="col" />
+            <col class="col" />
+            <col class="col" />
+            <col class="col" />
+            <col class="col" />
+            <col class="col" />
+            <col class="col" />
+          </colgroup>
+          <thead>
+            <tr class="tablehead">
+              <th class="tg-7eit"></th>
+              <th class="tg-a3yo">Mon</th>
+              <th class="tg-a3yo">Tue</th>
+              <th class="tg-a3yo">Wed</th>
+              <th class="tg-a3yo">Thu</th>
+              <th class="tg-a3yo">Fri</th>
+              <th class="tg-a3yo">Sat</th>
+            </tr>
+            <tr>
+              <th id="amindicator" class="tg-a3yo" rowspan="5">
+                <div class="timecontainer">
+                  <ion-icon name="partly-sunny-outline"></ion-icon
+                  ><span>AM</span>
+                </div>
+              </th>
+              <th class="tg-vhtn">Chào cờ</th>
+              <th class="tg-vhtn">Thể dục</th>
+              <th class="tg-vhtn">Lịch sử</th>
+              <th class="tg-vhtn">Toán</th>
+              <th class="tg-vhtn">Toán</th>
+              <th class="tg-vhtn">Lịch sử</th>
+            </tr>
+            <tr>
+              <th class="tg-vhtn">Toán</th>
+              <th class="tg-vhtn">H.Nghiệp</th>
+              <th class="tg-vhtn">Sinh học</th>
+              <th class="tg-vhtn">Toán</th>
+              <th class="tg-vhtn">Tin học</th>
+              <th class="tg-vhtn">Ngoại ngữ</th>
+            </tr>
+            <tr>
+              <th class="tg-vhtn">Ngữ văn</th>
+              <th class="tg-vhtn">Sinh học</th>
+              <th class="tg-vhtn">Địa lý</th>
+              <th class="tg-vhtn">GDDP</th>
+              <th class="tg-vhtn">Ngoại ngữ</th>
+              <th class="tg-vhtn">Vật lý</th>
+            </tr>
+            <tr>
+              <th class="tg-vhtn">Ngữ văn</th>
+              <th class="tg-vhtn">Quốc phòng</th>
+              <th class="tg-vhtn">Ngữ văn</th>
+              <th class="tg-vhtn">Vật Lý</th>
+              <th class="tg-vhtn">Ngoại Ngữ</th>
+              <th class="tg-vhtn">SHCN</th>
+            </tr>
+            <tr>
+              <th class="tg-vhtn">Tin học</th>
+              <th class="tg-vhtn">Địa lý</th>
+              <th class="tg-vhtn">Ngữ văn</th>
+              <th class="tg-vhtn">Vật lý</th>
+              <th class="tg-vhtn">Thể dục</th>
+              <th class="tg-vhtn"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-7mcv" colspan="7">
+                -<ion-icon name="leaf-outline"></ion-icon>-
+              </td>
+            </tr>
+            <tr>
+              <td id="pmindicator" class="tg-a3yo" rowspan="4">
+                <div class="timecontainer">
+                  <ion-icon name="cloudy-night-outline"></ion-icon
+                  ><span>PM</span>
+                </div>
+              </td>
+              <td class="tg-vhtn-2">Vật lý</td>
+              <td class="tg-vhtn-2">Toán</td>
+              <td class="tg-vhtn-2"></td>
+              <td class="tg-vhtn-2">Ngoại ngữ</td>
+              <td class="tg-vhtn-2">Ngoại ngữ</td>
+              <td class="tg-vhtn-2"></td>
+            </tr>
+            <tr>
+              <td class="tg-vhtn-2">Toán</td>
+              <td class="tg-vhtn-2">Toán</td>
+              <td class="tg-vhtn-2"></td>
+              <td class="tg-vhtn-2">Ngoại ngữ</td>
+              <td class="tg-vhtn-2">Ngoại ngữ</td>
+              <td class="tg-vhtn-2"></td>
+            </tr>
+            <tr>
+              <td class="tg-vhtn-2">Ngữ văn</td>
+              <td class="tg-vhtn-2">Vật lý</td>
+              <td class="tg-vhtn-2"></td>
+              <td class="tg-vhtn-2">Vật lý</td>
+              <td class="tg-vhtn-2">Toán</td>
+              <td class="tg-vhtn-2"></td>
+            </tr>
+            <tr>
+              <td class="tg-vhtn-2">Ngữ văn</td>
+              <td class="tg-vhtn-2">Ngữ văn</td>
+              <td class="tg-vhtn-2"></td>
+              <td class="tg-vhtn-2">Vật Lý</td>
+              <td class="tg-vhtn-2">Toán</td>
+              <td class="tg-vhtn-2"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script>
+      sal();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

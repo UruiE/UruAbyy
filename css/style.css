@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&display=swap");
+@import url(../css/menu.css);
+
+:root {
+  --bg-2: #6db5f4;
+  --bg-3: #caf1ff;
+  --accent: #5f8bd3;
+  --border: #c9ccd5;
+  --border-2: #b5bac9;
+  --white: white;
+  --black: black;
+  --trans: transparent;
+}
+
+/*Start*/
+section {
+  min-height: 100vh;
+  
+  padding: 4em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section:nth-of-type(1) {
+  height: 100vh;
+  background-color: var(--trans);
+  background: url("../img/class.jpg") center no-repeat;
+  background-size: cover;
+  color: var(--accent);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  justify-content: center;
+  justify-items: start;
+}
+.year {
+  font-weight: 700;
+  font-size:9em;
+}
+.year span {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--bg-2);
+}
+.firstDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--bg-2);
+  
+}
+.class {
+  font-size: 3em;
+  color: var(--white);
+  
+}
+.stu-num {
+  position: relative;
+  font-size: 50px;
+  color: var(--white);
+}
+
+/*AboutContent*/
+section:nth-of-type(2) {
+  background: var(--black);
+  min-height: 100vh;
+  height: calc(100vh + 8em);
+  color: var(--bg);
+  display: flex;
+  justify-content: center;
+}
+.quote {
+  width: max-content;
+  font-size: 4em;
+
+  color: var(--bg-2);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.quote span:nth-child(2) {
+  color: var(--white) !important;
+}
+.quote span {
+  margin-right: 5px;
+}
+.quote span:nth-child(1) {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.author {
+  position: relative;
+  right: 30px;
+  font-size: .5em;
+  color: var(--bg-3);
+  align-self: flex-end;
+}
+/*Scroll to top*/
+button {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999999;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  border: 4px solid var(--lightgray);
+  transition: 0.8s;
+  font-size: 1.5em;
+  line-height: 15px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--gray);
+}
+button:active {
+  background-color: var(--lightgray);
+}
+button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/*Website Instruction*/
+section:nth-of-type(3) {
+  background: var(--black);
+  min-height: 100vh;
+  color: var(--bg-2);
+  display: flex;
+  justify-content: center;
+}
+.insdiv {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insdiv h1{
+  font-size: 3em;
+}
+.insdiv div {
+  font-size: 2em;
+  color: var(--white);
+  width: 52%;
+  text-align: center;
+}
+/* responsive*/
+/*laptop*/
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .mobile-nav ul li{
+    margin-top: 10px;
+  }
+  .mobile-nav ul li a{
+    font-size: 3.2em;
+  }.mobile-nav ul li{
+    margin-top: 10px;
+  }
+  .mobile-nav ul li a{
+    font-size: 3.2em;
+  }
+  .year{
+    font-size: 4em;
+   }
+   .class,
+   .stu-num{
+     font-size: 1.8em;
+   }
+   .quote{
+     font-size: 2.5em;
+   }
+   .author{
+    font-size: .5em;
+   }
+   .insdiv h1{
+     font-size: 2.3em;
+   }
+   .insdiv div{
+     font-size: 1.2em;
+     width: 65%;
+ 
+   }
+}
+@media (max-width: 767px) {
+  section{
+    padding: 2.5em;
+  }
+  section:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .year{
+    font-size: 4em;
+   }
+   .class,
+   .stu-num{
+     font-size: 2em;
+   }
+   .quote{
+     font-size: 3em;
+   }
+   .insdiv h1{
+     font-size: 2.3em;
+   }
+   .insdiv div{
+     font-size: 1.4em;
+     width: 75%;
+   }
+}
+
+@media (max-width: 410px) {
+  .spancontainer{
+    font-size: 0.9em;
+  }
+  .insdiv div{
+    font-size: 1.4em;
+    width: 85%;
+  }
+  .hamburger-menu{
+    justify-content: flex-start;
+    margin-left: 15px;
+    width: max-content;
+  }
+}
+@media (max-width: 380px) {
+  .spancontainer{
+    font-size: .8em;
+  }
+}

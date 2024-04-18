@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #ababab">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quản lý học sinh - Sơ Đồ</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico" />
+    <link rel="stylesheet" href="../css/prgress.css" />
+    <link rel="stylesheet" href="../js/node_modules/sal.js/dist/sal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="mobile-nav hide">
+        <ul>
+          <li>
+            <a href="../index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="aboutmenu.html">SƠ ĐỒ LỚP</a>
+          </li>
+          <li>
+            <a href="tkb.html">TKB LỚP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="dropdown"
+      data-sal-duration="700"
+      data-sal="slide-right"
+      data-sal-delay="0"
+      data-sal-easing="ease-in-out-bounce"
+      data-sal-repeat="1"
+    >
+      <button class="dropbtn">
+        Tùy Chọn <ion-icon name="chevron-down-outline"></ion-icon>
+      </button>
+      <div class="dropdown-content">
+        <div class="name" onclick="aboutTBNClick()">Trương Bảo Ngọc</div>
+        <div class="name" onclick="aboutNHDClick()">Nguyễn Hải Đăng</div>
+        <div class="name" onclick="aboutNQHClick()">Nguyễn Quang Học</div>
+        <div class="name" onclick="aboutVGNClick()">Vũ Gia Như</div>
+        <div class="name" onclick="aboutNDTClick()">Nguyễn Đức Thuận</div>
+        <div class="name" onclick="aboutClassClick()">Sơ Đồ Lớp</div>
+      </div>
+    </div>
+    <div id="mainContent">
+      <iframe
+        id="iframe"
+        src="tbn.html"
+        frameborder="0"
+        allowtransparency="true"
+        onload="this.style.visibility='visible';"
+      ></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/_app.js"></script>
+    <script src="../js/node_modules/sal.js/dist/sal.js"></script>
+    <script>
+      sal();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

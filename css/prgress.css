@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&display=swap");
+@import url(../css/menu.css);
+:root {
+  --bg: #8279db;
+  --bg-2: #9bd0ff;
+  --bg-3: #caf1ff;
+  --accent: #316ece;
+  --accent-2: #253f69;
+  --border: #c9ccd5;
+  --border-2: #b5bac9;
+  --gray: #4c4c4c;
+  --lightgray: #6c6c6c;
+  --white: white;
+  --black: black;
+  --trans: transparent;
+  --brown: #644440;
+  --green: #a1f9bd;
+}
+
+/*FirstDiv*/
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.firstDiv h1 {
+  font-size: 30px;
+  color: var(--bg);
+  font-weight: 600;
+}
+.firstDiv span {
+  font-size: 18px;
+  color: var(--accent-2);
+}
+/*Name*/
+.stdcontainer {
+  margin-left: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-row: 2/3;
+}
+.stdname {
+  font-size: 6em;
+  font-weight: 600;
+}
+.stdcontainer span,
+.stdcontainer p {
+  color: var(--white);
+  font-size: 2.5em;
+  width: 100%;
+  margin-top: 5px;
+}
+.positioncontainer {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-bottom: 50px;
+  position: relative;
+  right: 50px;
+  width: 359px;
+  height: 259px;
+  grid-row: 2/3;
+}
+/*https://codepen.io/josetxu/pen/XWqMJpN*/
+/*** IN PROGRESS ***/
+
+:root {
+  --c1: var(--bg);
+  --b2: #222;
+  --b3: #333;
+  --w1: #fff;
+  --w2: #eee;
+  --t1: all 0.5s ease 0s;
+}
+
+section:nth-of-type(2) {
+  background: #000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background: var(--trans);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-skills {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-skills > div {
+  width: 40%;
+
+  border-radius: 2px;
+  position: relative;
+}
+
+ul.skills {
+  width: 100%;
+  position: relative;
+  padding: 25px 35px;
+}
+
+ul.skills:before {
+  content: "Năng lực học tập";
+  position: absolute;
+  top: -25px;
+
+  color: var(--white);
+  width: 100%;
+  left: 0px;
+
+  text-align: center;
+  font-weight: 600;
+  z-index: 1;
+  transition: var(--t1);
+  font-size: 40px;
+}
+
+ul.skills:hover:before,
+label:hover + ul.skills:before,
+input:checked + label + ul.skills:before {
+  transition: var(--t1);
+  background-position: 0 50%;
+}
+ul.skills:hover:after,
+label:hover + ul.skills:after,
+input:checked + label + ul.skills:after {
+  transition: var(--t1);
+}
+
+ul.skills li {
+  --per: 50;
+  --dur: calc(calc(var(--per) / 100) * 1.5s);
+  margin: 0 0 5px 0;
+  list-style: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--w2);
+}
+
+ul.skills li:before {
+  content: "";
+  position: absolute;
+  background: #1c1c1c;
+  height: 16px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  border: 1px solid #111;
+  border-color: #111 #323232 #323232 #111;
+  --track: #8279db66;
+  background: linear-gradient(
+    90deg,
+    var(--track) calc(calc(var(--per) * 1%) + 4px),
+    #1c1c1c calc(calc(var(--per) * 1%) + 4px)
+  );
+}
+
+ul.skills li:after {
+  content: "";
+  height: 11px;
+  margin: 0 0 2px 0;
+  background: var(--bg);
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px #8279db66;
+  left: 3px;
+  width: 0%;
+  bottom: 0;
+  transition: all var(--dur) ease 0s;
+  animation: start 1s ease 0s 2 alternate;
+}
+ul.skills li:hover {
+  filter: brightness(1.5);
+  transition: var(--t1);
+}
+
+ul.skills:hover li:after,
+label:hover + ul.skills li:after,
+input:checked + label + ul.skills li:after {
+  width: calc(calc(var(--per) * 1%) - 2px);
+}
+
+@keyframes start {
+  100% {
+    width: calc(calc(var(--per) * 1%) - 2px);
+  }
+}
+
+ul.skills li span {
+  font-weight: 500;
+}
+
+ul.skills li span:before {
+  position: absolute;
+  right: -25px;
+  top: 43px;
+  transition: var(--t1);
+  content: "";
+  opacity: 1;
+  border: 7px solid #fff0;
+}
+
+ul.skills li:hover span:before,
+.profile-skills input:checked + label + ul.skills li span:before {
+  transition: var(--t1);
+  right: calc(calc(calc(100 - var(--per)) * 1%) - 12px);
+  opacity: 1;
+  border-right-color: var(--bg);
+}
+
+ul.skills li span:after {
+  position: absolute;
+  right: -40px;
+  top: 38px;
+  transition: var(--t1);
+  counter-reset: percent var(--per);
+  /*content: counter(percent) "%";*/
+  content: counter(percent);
+  color: var(--b2);
+  opacity: 1 !important;
+  padding: 4px 6px;
+  border-radius: 1px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+ul.skills li:hover span:after,
+.profile-skills input:checked + label + ul.skills li span:after {
+  transition: var(--t1);
+  right: calc(calc(85 - var(--per)) * 1%);
+  right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
+  opacity: 1;
+  background: var(--c1);
+}
+
+/*Responsive*/
+@media (max-width: 1024px) and (min-width: 768px) {
+  .stdcontainer {
+    margin: 0 0 50px 50px;
+  }
+  .stdname {
+    font-size: 5em;
+    font-weight: 600;
+  }
+  .stdcontainer span {
+    font-size: 2em;
+  }
+  .positioncontainer {
+    display: none;
+  }
+  .profile-skills > div {
+    width: 70%;
+  }
+  .dropdown {
+    left: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .dropdown {
+    left: 130px;
+  }
+  .profile-skills > div {
+    width: 70%;
+  }
+  .stdname {
+    font-size: 4.5em;
+  }
+  .stdcontainer span {
+    font-size: 2em;
+  }
+  .positioncontainer {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .dropdown {
+    left: 130px;
+    top: 25px;
+  }
+  .stdcontainer {
+    margin: 0 0 25px 25px;
+  }
+  .stdname {
+    font-size: 3em;
+    font-weight: 600;
+  }
+  .stdcontainer span,
+  .stdcontainer p {
+    font-size: 1.8em;
+  }
+  .profile-skills > div {
+    width: 80%;
+  }
+}
+@media (max-width: 380px) {
+  .stdname {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .stdcontainer span,
+  .stdcontainer p {
+    font-size: 1.5em;
+  }
+}
+/*loader*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 1.05s, visibility 1.05s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader:after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #cdcdcd;
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: loading 1.25s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

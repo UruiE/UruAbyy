@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quản lý học sinh - Trang chủ</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="mobile-nav hide">
+        <ul>
+          <li>
+            <a href="index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="html/aboutmenu.html">SƠ ĐỒ LỚP</a>
+          </li>
+          <li>
+            <a href="html/tkb.html">TKB LỚP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <div class="firstDiv">
+        <div
+          data-sal-duration="600"
+          data-sal="slide-right"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out-bounce"
+          data-sal-repeat="1"
+          class="year"
+        >
+          2023 <span>-</span> 2024
+        </div>
+        <div
+          class="class"
+          data-sal-duration="600"
+          data-sal="slide-left"
+          data-sal-delay="500"
+          data-sal-easing="fade-in"
+          data-sal-repeat="1"
+        >
+          Lớp 11A1.3 - Khối A1
+        </div>
+        <p
+          data-sal-duration="600"
+          data-sal="slide-left"
+          data-sal-delay="500"
+          data-sal-easing="fade-in"
+          data-sal-repeat="1"
+          class="stu-num"
+        >
+          46 học sinh
+        </p>
+      </div>
+    </section>
+
+    <section id="second">
+      <div
+        class="quote"
+        data-sal-duration="800"
+        data-sal="fade-in"
+        data-sal-delay="300"
+        data-sal-easing="ease-out"
+        data-sal-repeat="1"
+      >
+        <div class="spancontainer">
+          "<span>11A1.3</span> <span>carry on!</span>"
+        </div>
+        <p
+          class="author"
+          data-sal-duration="600"
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out-bounce"
+          data-sal-repeat="1"
+        >
+          -by Bảo Ngọc
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="insdiv">
+        <h1
+          class="insabout"
+          data-sal-duration="600"
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out-bounce"
+          data-sal-repeat="1"
+        >
+          VỀ TRANG WEB NÀY
+        </h1>
+        <div
+          data-sal-duration="600"
+          data-sal="slide-down"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out-bounce"
+          data-sal-repeat="1"
+        >
+          Trang web được tạo ra với mục đích giói thiệu & hỗ trợ giáo viên trong
+          việc làm quen, nhận biết năng lực học tập của học sinh.
+        </div>
+      </div>
+    </section>
+    <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script>
+      sal();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <div class="loader"></div>
+  </body>
+</html>
