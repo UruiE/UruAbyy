@@ -10,6 +10,10 @@ function getSchedule() {
         })
         .then(function (schedule) {
             console.log(schedule)
+
+            divAM = document.getElementById('am')
+            divPM = document.getElementById('pm')
+
             var htmls = `
 
             `

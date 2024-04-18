@@ -13,14 +13,14 @@ function getStudent(uid) {
             var htmls = `
                 <section
                 style="
-                    background: url(${student.img}) 0 0 no-repeat;
+                    background: url(${student.image}) 0 0 no-repeat;
                     background-size: cover;
                     background-position: center;
                 "
                 >
-                <div class="stdcontainer">
+                <div class="stdcontainer" >
                     <div class="stdname" style="color: #d0bbb9">${student.name}</div>
-                    <span>${student.date}</span>
+                    <span>${convertTime(student.date)}</span>
                     <p>${student.character}</p>
                 </div>
                 </section>
@@ -38,7 +38,6 @@ function getStudent(uid) {
                 </div>
                 </section>
             `
-
 
             document.getElementById('thongtin').innerHTML = htmls;
         })
@@ -59,14 +58,14 @@ console.log(uid); // In ra giá trị của uid
 
 getStudent(uid)
 
-// function convertTime(isoDateString ) {
-//     const dateObject = new Date(isoDateString);
+function convertTime(isoDateString) {
+    const dateObject = new Date(isoDateString);
 
-//     // Lấy các thành phần của ngày tháng
-//     const year = dateObject.getFullYear();
-//     const month = String(dateObject.getMonth() + 1).padStart(2, '0'); // Cần cộng 1 vì tháng bắt đầu từ 0
-//     const day = String(dateObject.getDate()).padStart(2, '0');
+    // Lấy các thành phần của ngày tháng
+    const year = dateObject.getFullYear();
+    const month = String(dateObject.getMonth() + 1).padStart(2, '0'); // Cần cộng 1 vì tháng bắt đầu từ 0
+    const day = String(dateObject.getDate()).padStart(2, '0');
 
-//     // Tạo chuỗi ngày tháng mới
-//     return ${year}-${month}-${day}
-// }
+    // Tạo chuỗi ngày tháng mới
+    return `${year}/${month}/${day}`;
+}
