@@ -32,7 +32,9 @@ const scrollToTop = () => {
     console.log(event);
   });
 };
-
+function aboutStudentClick(uid) {
+  window.location.href = "/html/student.html?uid=" + uid;
+}
 displayButton();
 scrollToTop();
 
