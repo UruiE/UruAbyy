@@ -1,30 +1,27 @@
-console.log("run student.js")
+console.log("run student.js");
 
 function getSchedule() {
-    console.log("fetch api get schedule")
-    fetch("http://localhost:3002/schedule")
-        .then(function (response) {
+  console.log("fetch api get schedule");
+  fetch("http://localhost:3002/schedule")
+    .then(function (response) {
+      // console.log("alo S", response.json())
+      return response.json();
+    })
+    .then(function (schedule) {
+      console.log(schedule);
 
-            // console.log("alo S", response.json())
-            return response.json();
-        })
-        .then(function (schedule) {
-            console.log(schedule)
+      divAM = document.getElementById("am");
+      divPM = document.getElementById("pm");
 
-            divAM = document.getElementById('am')
-            divPM = document.getElementById('pm')
+      var htmls = `
 
-            var htmls = `
+            `;
 
-            `
-
-
-            document.getElementById('schedule').innerHTML = htmls;
-        })
-        .catch(function (err) {
-            alert('Cos looix', err);
-        })
-
+      document.getElementById("schedule").innerHTML = htmls;
+    })
+    .catch(function (err) {
+      alert("Có lỗi xảy ra", err);
+    });
 }
 
 // Lấy query string từ URL
@@ -33,7 +30,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // Lấy giá trị của tham số 'uid'
 
-getSchedule()
+getSchedule();
 
 // function convertTime(isoDateString ) {
 //     const dateObject = new Date(isoDateString);

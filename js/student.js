@@ -1,20 +1,18 @@
-console.log("run student.js")
+console.log("run student.js");
 
 function getStudent(uid) {
-    console.log("fetch api get student", uid)
-    fetch("../json/student.json")
-        
-        .then(function (response) {
+  console.log("fetch api get student", uid);
+  fetch("../json/student.json")
+    .then(function (response) {
+      // console.log("alo S", response.json())
+      return response.json();
+    })
 
-            // console.log("alo S", response.json())
-            return response.json();
-        })
-
-        .then(function (student) {
-            console.log(student);
-            const studentx = student.find(student => student.uid === uid);
-            console.log(studentx);
-            var htmls = `
+    .then(function (student) {
+      console.log(student);
+      const studentx = student.find((student) => student.uid === uid);
+      console.log(studentx);
+      var htmls = `
                 <section
                 style="
                     background: url(${studentx.image}) 0 0 no-repeat;
@@ -41,14 +39,13 @@ function getStudent(uid) {
                     </div>
                 </div>
                 </section>
-            `
+            `;
 
-            document.getElementById('thongtin').innerHTML = htmls;
-        })
-        .catch(function (err) {
-            alert('Cos looix', err);
-        })
-
+      document.getElementById("thongtin").innerHTML = htmls;
+    })
+    .catch(function (err) {
+      alert("Có lỗi xảy ra", err);
+    });
 }
 
 // Lấy query string từ URL
@@ -56,8 +53,8 @@ const queryString = window.location.search;
 // Tạo một đối tượng URLSearchParams từ query string
 const urlParams = new URLSearchParams(queryString);
 // Lấy giá trị của tham số 'uid'
-const uid = urlParams.get('uid');
+const uid = urlParams.get("uid");
 
 console.log(uid); // In ra giá trị của uid
 
-getStudent(uid)
+getStudent(uid);
