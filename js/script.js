@@ -33,7 +33,7 @@ const scrollToTop = () => {
   });
 };
 function aboutStudentClick(uid) {
-  window.location.href = "/html/student.html?uid=" + uid;
+  window.location.href = "student.html?uid=" + uid;
 }
 displayButton();
 scrollToTop();

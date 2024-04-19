@@ -2,7 +2,7 @@ console.log("run student.js")
 
 function getStudent(uid) {
     console.log("fetch api get student", uid)
-    fetch("../js/student.json")
+    fetch("../json/student.json")
         
         .then(function (response) {
 
