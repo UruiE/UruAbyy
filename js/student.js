@@ -2,26 +2,30 @@ console.log("run student.js")
 
 function getStudent(uid) {
     console.log("fetch api get student", uid)
-    fetch("http://localhost:3002/data/" + uid)
+    fetch("../js/student.json")
+        
         .then(function (response) {
 
             // console.log("alo S", response.json())
             return response.json();
         })
+
         .then(function (student) {
-            console.log(student)
+            console.log(student);
+            const studentx = student.find(student => student.uid === uid);
+            console.log(studentx);
             var htmls = `
                 <section
                 style="
-                    background: url(${student.image}) 0 0 no-repeat;
+                    background: url(${studentx.image}) 0 0 no-repeat;
                     background-size: cover;
                     background-position: center;
                 "
                 >
                 <div class="stdcontainer" >
-                    <div class="stdname" style="color: #d0bbb9">${student.name}</div>
-                    <span>${student.date}</span>
-                    <p>${student.character}</p>
+                    <div class="stdname" style="color: #d0bbb9">${studentx.name}</div>
+                    <span>${studentx.date}</span>
+                    <p >${studentx.character}</p>
                 </div>
                 </section>
                 <section>
@@ -29,9 +33,9 @@ function getStudent(uid) {
                     <div class="profile-skills">
                     <div>
                         <ul class="skills skills1">
-                        <li class="sk-ly" style="--per: ${student.math}"><span>Toán</span></li>
-                        <li class="sk-toan" style="--per: ${student.physic}"><span>Vật Lý</span></li>
-                        <li class="sk-anh" style="--per: ${student.english}"><span>Ngoại Ngữ</span></li>
+                        <li class="sk-ly" style="--per: ${studentx.math}"><span>Toán</span></li>
+                        <li class="sk-toan" style="--per: ${studentx.physic}"><span>Vật Lý</span></li>
+                        <li class="sk-anh" style="--per: ${studentx.english}"><span>Ngoại Ngữ</span></li>
                         </ul>
                     </div>
                     </div>
