@@ -87,7 +87,7 @@ section {
   margin-bottom: 60px;
   color: var(--bg-2);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 .divTableFoot {
   display: table-footer-group;
