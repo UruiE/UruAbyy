@@ -384,8 +384,8 @@
     "character": "Trầm tính nhưng thân thiện, hoà đồng",
     "math": 98,
     "english": 83,
-    "physic": 91,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=983",
+    "physic": 90,
+    "image": "../img/dmn.jpg",
     "row": 5,
     "columms": 8
   },
@@ -430,7 +430,7 @@
     "math": 98,
     "english": 83,
     "physic": 93,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=986",
+    "image": "../img/dmn.jpg",
     "row": 5,
     "columms": 9
   },
