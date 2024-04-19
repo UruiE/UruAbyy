@@ -42,6 +42,8 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .tkbcontainer {
   display: flex;
@@ -99,4 +101,27 @@ section {
   width: 60px;
   background: var(--white);
   border: none;
+}
+@media (max-width: 768px) {
+  .divTableCell,
+  .divTableHead {
+    font-size: 17px;
+    width: 120px;
+    padding: 15px 15px;
+  }
+  #walkway {
+    width: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .divTable {
+    border-collapse: collapse;
+  }
+  .divTableCell,
+  .divTableHead {
+    font-size: 15px;
+    width: 100px;
+    padding: 10px 5px;
+  }
 }
