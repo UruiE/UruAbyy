@@ -39,9 +39,6 @@ displayButton();
 scrollToTop();
 
 /*CP*/
-let iframe = document.getElementById("iframe");
-fadeOut(iframe, 1000);
-
 $(document).ready(function () {
   $("iframe#iframe_id").attr("src", "iframe_url");
 });
@@ -70,7 +67,7 @@ function aboutClassClick() {
   document.getElementById("iframe").setAttribute("src", "sdl.html");
 }
 
-//fade bitch
+/*fadeOut
 let fadeOut = (element, duration) => {
   let s = element.style;
   s.transition = `opacity ${duration}ms`;
@@ -78,4 +75,4 @@ let fadeOut = (element, duration) => {
   setTimeout(() => {
     s.display = "none";
   }, duration);
-};
+};*/
