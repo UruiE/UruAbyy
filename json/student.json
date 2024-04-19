@@ -70,7 +70,7 @@
     "math": 98,
     "english": 83,
     "physic": 91,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=962",
+    "image": "../img/tqgb.jpeg",
     "row": 1,
     "columms": 8
   },
@@ -100,7 +100,7 @@
     "math": 98,
     "english": 83,
     "physic": 91,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=964",
+    "image": "../img/ptlc.jpg",
     "row": 3,
     "columms": 9
   },
@@ -445,7 +445,7 @@
     "math": 98,
     "english": 83,
     "physic": 91,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=987",
+    "image": "../img/ntn.jpg",
     "row": 2,
     "columms": 7
   },
@@ -460,7 +460,7 @@
     "math": 98,
     "english": 83,
     "physic": 91,
-    "image": "../img/tbn.jpg",
+    "image": "../img/tbn.jpeg",
     "row": 4,
     "columms": 9
   },
@@ -580,7 +580,7 @@
     "math": 90,
     "english": 85,
     "physic": 80,
-    "image": "https://i.natgeofe.com/k/4cf56024-edd3-4ed7-8a80-d81d90ab78ba/arctic-fox_3x2.jpg?wp=1&w=1436&h=996",
+    "image": "../img/nmt.jpg",
     "row": 2,
     "columms": 9
   },
