@@ -71,3 +71,11 @@ function aboutClassClick() {
 }
 
 //fade bitch
+let fadeOut = (element, duration) => {
+  let s = element.style;
+  s.transition = `opacity ${duration}ms`;
+  s.opacity = 0;
+  setTimeout(() => {
+    s.display = "none";
+  }, duration);
+};
