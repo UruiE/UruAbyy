@@ -20,7 +20,7 @@ function getStudent(uid) {
                 >
                 <div class="stdcontainer" >
                     <div class="stdname" style="color: #d0bbb9">${student.name}</div>
-                    <span>${convertTime(student.date)}</span>
+                    <span>${student.date}</span>
                     <p>${student.character}</p>
                 </div>
                 </section>
@@ -57,15 +57,3 @@ const uid = urlParams.get('uid');
 console.log(uid); // In ra giá trị của uid
 
 getStudent(uid)
-
-function convertTime(isoDateString) {
-    const dateObject = new Date(isoDateString);
-
-    // Lấy các thành phần của ngày tháng
-    const year = dateObject.getFullYear();
-    const month = String(dateObject.getMonth() + 1).padStart(2, '0'); // Cần cộng 1 vì tháng bắt đầu từ 0
-    const day = String(dateObject.getDate()).padStart(2, '0');
-
-    // Tạo chuỗi ngày tháng mới
-    return `${year}/${month}/${day}`;
-}
