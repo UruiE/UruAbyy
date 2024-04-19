@@ -18,6 +18,17 @@
 }
 
 /*FirstDiv*/
+.bar {
+  position: relative;
+  transform: translateY(0px);
+  background: var(--black);
+  transition: all 0ms 300ms;
+}
+.bar::before,
+.bar::after {
+  background-color: var(--black);
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -318,15 +329,13 @@ ul.skills li:hover span:after,
   }
 }
 
-
-
 /*returnButton*/
-#mainContent{
+#mainContent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
-.returnButton{
+.returnButton {
   position: fixed;
   display: flex;
   width: 60px;
@@ -341,5 +350,3 @@ ul.skills li:hover span:after,
   top: 20px;
   cursor: pointer;
 }
-
-

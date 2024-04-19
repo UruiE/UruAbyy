@@ -19,7 +19,7 @@
 
 /*FirstDiv*/
 body {
-  background-color: var(--marblue) !important;
+  background-color: var(--white) !important;
 }
 
 .bar {
@@ -31,42 +31,6 @@ body {
 .bar::before,
 .bar::after {
   background-color: var(--black);
-}
-/*loader*/
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f9fb;
-  transition: opacity 1.05s, visibility 1.05s;
-}
-
-.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader:after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #cdcdcd;
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: loading 1.25s ease infinite;
-}
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
 }
 
 /*Start*/
@@ -90,6 +54,9 @@ section {
   display: table;
   border-collapse: separate;
   border-spacing: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .divTableRow {
   display: table-row;
@@ -104,10 +71,10 @@ section {
   padding: 20px 0;
   word-break: normal;
   font-weight: normal;
-  width: 200px;
+  width: 160px;
   text-align: center;
   border: 4px solid var(--bg-2);
-  border-top-color: transparent;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 20px;
   color: #464661;
@@ -115,6 +82,12 @@ section {
 }
 .divTableHeading {
   display: table-header-group;
+  font-size: 4em;
+  font-weight: 500;
+  margin-bottom: 60px;
+  color: var(--bg-2);
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .divTableFoot {
   display: table-footer-group;
@@ -123,7 +96,7 @@ section {
   display: table-row-group;
 }
 #walkway {
-  width: 120px;
-  background: var(--marblue);
+  width: 60px;
+  background: var(--white);
   border: none;
 }

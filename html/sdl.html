@@ -1,102 +1,187 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Quản lý học sinh - Sơ Đồ</title>
-      <link rel="icon" type="image/x-icon" href="../img/icon.ico" />
-      <link rel="stylesheet" href="../css/sdl.css" />
-      <link rel="stylesheet" href="../js/node_modules/sal.js/dist/sal.css" />
-    </head>
-    <body>
-      <section>
-        <div class="tkbcontainer">
-          <div class="divTable">
-            <!-- <div class="divTableHeading">
-              
-            </div> -->
-            <div class="divTableBody">
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('18')">Nhật Khang</div>
-                <div class="divTableCell" ></div>
-                <div class="divTableCell" onclick="aboutStudentClick('36')">Tiến Thành</div>
-                <div class="divTableCell" onclick="aboutStudentClick('4')">Thảo Anh</div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('46')">Hải Vy</div>
-                <div class="divTableCell" onclick="aboutStudentClick('11')">Như Hậu</div>
-                <div class="divTableCell" onclick="aboutStudentClick('44')">Kiểu Vy</div>
-                <div class="divTableCell" onclick="aboutStudentClick('10')">Bảo Hân</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quản lý học sinh - Sơ Đồ</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico" />
+    <link rel="stylesheet" href="../css/sdl.css" />
+    <link rel="stylesheet" href="../js/node_modules/sal.js/dist/sal.css" />
+  </head>
+  <body>
+    <section>
+      <div class="tkbcontainer">
+        <div class="divTable">
+          <div class="divTableHeading">Sơ đồ lớp</div>
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('18')">
+                Nhật Khang
               </div>
+              <div class="divTableCell"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('36')">
+                Tiến Thành
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('4')">
+                Thảo Anh
+              </div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('46')">
+                Hải Vy
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('11')">
+                Như Hậu
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('44')">
+                Kiểu Vy
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('10')">
+                Bảo Hân
+              </div>
+            </div>
 
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('20')">Anh Khoa</div>
-                <div class="divTableCell" onclick="aboutStudentClick('35')">Hải Sơn</div>
-                <div class="divTableCell" onclick="aboutStudentClick('42')">Minh Tuấn</div>
-                <div class="divTableCell" onclick="aboutStudentClick('41')">Anh Tuấn</div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('17')">Thu Hường</div>
-                <div class="divTableCell" onclick="aboutStudentClick('2')">Nam Anh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('5')">Gia Bảo</div>
-                <div class="divTableCell" onclick="aboutStudentClick('25')">Phi Long</div>
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('20')">
+                Anh Khoa
               </div>
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('13')">Bá Hoàng</div>
-                <div class="divTableCell" onclick="aboutStudentClick('9')">Hải Đăng</div>
-                <div class="divTableCell" onclick="aboutStudentClick('21')">Tá Kiên</div>
-                <div class="divTableCell" onclick="aboutStudentClick('33')">Thành Phong</div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('32')">Gia Như</div>
-                <div class="divTableCell" onclick="aboutStudentClick('30')">Thanh Ngân</div>
-                <div class="divTableCell" onclick="aboutStudentClick('14')">Quang Học</div>
-                <div class="divTableCell" onclick="aboutStudentClick('39')">Minh Trọng</div>
+              <div class="divTableCell" onclick="aboutStudentClick('35')">
+                Hải Sơn
               </div>
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('22')">Tuấn Kiệt</div>
-                <div class="divTableCell" onclick="aboutStudentClick('27')">Tuyết Mai</div>
-                <div class="divTableCell" onclick="aboutStudentClick('23')">Yến Linh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('12')">Đức Hiếu</div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('38')">Anh Thư</div>
-                <div class="divTableCell" onclick="aboutStudentClick('45')">Thảo Vy</div>
-                <div class="divTableCell" onclick="aboutStudentClick('43')">Thanh Vân</div>
-                <div class="divTableCell" onclick="aboutStudentClick('7')">Linh Chi</div>
+              <div class="divTableCell" onclick="aboutStudentClick('42')">
+                Minh Tuấn
               </div>
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('34')">Xuân Phúc</div>
-                <div class="divTableCell" onclick="aboutStudentClick('28')">Đức Mạnh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('24')">Mai Linh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('8')">Mỹ Duyên</div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('1')">Quỳnh Anh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('40')">Thuỳ Trúc</div>
-                <div class="divTableCell" onclick="aboutStudentClick('3')">Trâm Anh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('31')">Bảo Ngọc</div>
+              <div class="divTableCell" onclick="aboutStudentClick('41')">
+                Anh Tuấn
               </div>
-              <div class="divTableRow">
-                <div class="divTableCell" onclick="aboutStudentClick('6')">Ngọc Châu</div>
-                <div class="divTableCell" onclick="aboutStudentClick('16')">Thảo Hương</div>
-                <div class="divTableCell" ></div>
-                <div class="divTableCell" ></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" id="walkway"></div>
-                <div class="divTableCell" onclick="aboutStudentClick('19')">Nam Khánh</div>
-                <div class="divTableCell" onclick="aboutStudentClick('37')">Đức Thuận</div>
-                <div class="divTableCell" onclick="aboutStudentClick('26')">Hương Ly</div>
-                <div class="divTableCell" onclick="aboutStudentClick('29')">Mai Nga</div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('17')">
+                Thu Hường
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('2')">
+                Nam Anh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('5')">
+                Gia Bảo
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('25')">
+                Phi Long
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('13')">
+                Bá Hoàng
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('9')">
+                Hải Đăng
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('21')">
+                Tá Kiên
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('33')">
+                Thành Phong
+              </div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('32')">
+                Gia Như
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('30')">
+                Thanh Ngân
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('14')">
+                Quang Học
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('39')">
+                Minh Trọng
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('22')">
+                Tuấn Kiệt
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('27')">
+                Tuyết Mai
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('23')">
+                Yến Linh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('12')">
+                Đức Hiếu
+              </div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('38')">
+                Anh Thư
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('45')">
+                Thảo Vy
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('43')">
+                Thanh Vân
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('7')">
+                Linh Chi
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('34')">
+                Xuân Phúc
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('28')">
+                Đức Mạnh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('24')">
+                Mai Linh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('8')">
+                Mỹ Duyên
+              </div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('1')">
+                Quỳnh Anh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('40')">
+                Thuỳ Trúc
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('3')">
+                Trâm Anh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('31')">
+                Bảo Ngọc
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell" onclick="aboutStudentClick('6')">
+                Ngọc Huyền
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('16')">
+                Ngọc Châu
+              </div>
+              <div class="divTableCell">Thảo Hương</div>
+              <div class="divTableCell"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" id="walkway"></div>
+              <div class="divTableCell" onclick="aboutStudentClick('19')">
+                Nam Khánh
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('37')">
+                Đức Thuận
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('26')">
+                Hương Ly
+              </div>
+              <div class="divTableCell" onclick="aboutStudentClick('29')">
+                Mai Nga
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </body>
-    <script src="../js/script.js"></script>
-
-
-
-  </html>
+      </div>
+    </section>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
