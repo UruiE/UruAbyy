@@ -25,12 +25,12 @@ body {
 .bar {
   position: relative;
   transform: translateY(0px);
-  background: var(--black);
+  background: var(--white);
   transition: all 0ms 300ms;
 }
 .bar::before,
 .bar::after {
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
 /*Start*/

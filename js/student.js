@@ -2,7 +2,7 @@ console.log("run student.js");
 
 function getStudent(uid) {
   console.log("fetch api get student", uid);
-  fetch("http://localhost:3002/data/"+ uid)
+  fetch("http://localhost:3002/data/" + uid)
     .then(function (response) {
       return response.json();
     })
@@ -17,7 +17,7 @@ function getStudent(uid) {
                     background: url(${student.image}) 0 0 no-repeat;
                     background-size: 200px;
                     background-position: center;
-                    background-color: #1a1a1a !important;
+                    background-color: #4f4f4f !important;
                 "
                 >
                 <div class="stdcontainer" >
@@ -39,6 +39,15 @@ function getStudent(uid) {
                     </div>
                 </div>
                 </section>
+                <style>
+      .bar {
+        background: var(--white);
+        transition: all 0ms 300ms;
+      }
+      .bar::before,
+      .bar::after {
+        background-color: var(--white) !important;
+      } </style>
             `;
 
       document.getElementById("thongtin").innerHTML = htmls;

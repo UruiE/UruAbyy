@@ -21,12 +21,12 @@
 .bar {
   position: relative;
   transform: translateY(0px);
-  background: var(--white);
+  background: var(--black);
   transition: all 0ms 300ms;
 }
 .bar::before,
 .bar::after {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 section {
