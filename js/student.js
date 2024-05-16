@@ -39,15 +39,6 @@ function getStudent(uid) {
                     </div>
                 </div>
                 </section>
-                <style>
-      .bar {
-        background: var(--white);
-        transition: all 0ms 300ms;
-      }
-      .bar::before,
-      .bar::after {
-        background-color: var(--white) !important;
-      } </style>
             `;
 
       document.getElementById("thongtin").innerHTML = htmls;
