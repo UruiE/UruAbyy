@@ -229,7 +229,7 @@ div#mainContent iframe {
   font-size: 1.8em;
   border: 3px solid #8c8c8c;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: white;
   width: calc(100% + 40px);
   cursor: pointer;
 }
