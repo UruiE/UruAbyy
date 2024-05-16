@@ -2,7 +2,7 @@ console.log("run student.js");
 
 function getStudent(uid) {
   console.log("fetch api get student", uid);
-  fetch("http://localhost:3002/data/"+ uid)
+  fetch("http://localhost:3002/data/" + uid)
     .then(function (response) {
       return response.json();
     })
@@ -39,6 +39,15 @@ function getStudent(uid) {
                     </div>
                 </div>
                 </section>
+                <style>
+                .bar {
+                  background: var(--white);
+                  transition: all 0ms 300ms;
+                }
+                .bar::before,
+                .bar::after {
+                  background-color: var(--white);
+                } </style>
             `;
 
       document.getElementById("thongtin").innerHTML = htmls;
